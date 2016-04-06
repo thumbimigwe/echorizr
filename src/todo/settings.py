@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'todo.core',
+    'todo',
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'to-do.db'),
     }
 }
